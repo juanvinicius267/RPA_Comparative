@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPA Comparativo</title>
+  <link href="../static/bootstrap.css">
+</head>
+<body>
+  <center>
+    <h2>
+      <p>Entre com o excel atualizado da comparação de remessas</p>
+    </h2>
+  </center>
+  
+  <form action="/fileUpload" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <div class="form-group">
+          <label for="nome">Selecione o arquivo:  </label>
+          <input type="file" id="file" accept=".xlsx" name="file" class="form-control">
+        </div>         
+        <input type="submit"> 
+    </fieldset>
+</form>
+</body>
+</html>
